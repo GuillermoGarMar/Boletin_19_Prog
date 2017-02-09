@@ -23,7 +23,7 @@ public class Boletin19 {
         Libreria lib = new Libreria();
         while (r == false) {
             JOptionPane.showMessageDialog(null, "Elixe a opcion que precise:");
-            JOptionPane.showMessageDialog(null, "1 para engadir un libro\n2 para vender un libro\n3 para amosar os libros\n4 para der de baixa un libro\n5 para consultar un libro\n 6 para salir");
+            JOptionPane.showMessageDialog(null, "1 para engadir un libro\n2 para vender un libro\n3 para amosar os libros\n4 para der de baixa un libro\n5 para consultar un libro\n6 para salir");
             cas = Integer.parseInt(JOptionPane.showInputDialog("introduzca la opcion"));
 
             switch (cas) {

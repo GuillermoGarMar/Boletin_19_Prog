@@ -39,6 +39,13 @@ public class Libreria {
     }
 
     public void AmosarLibros() {
+        String [] aux = new String [100];
+        int cont=0;
+        for (Libro l : libros) {
+            aux[cont]=(l.titulo);
+            cont++;
+        }
+        Arrays.sort(aux);
         Iterator it = libros.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
@@ -56,12 +63,9 @@ public class Libreria {
 
     public void consultarLibro() {
         String t = JOptionPane.showInputDialog("Introduce el titulo");
-        Iterator it = libros.iterator();
         for (Libro l : libros) {
             if (l.titulo.equals(t)) {
-                while (it.hasNext()) {
-                    System.out.println(it.next().toString());
-                }
+                System.out.println(l);
             }
         }
     }
